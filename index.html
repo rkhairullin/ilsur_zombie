@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#101713" />
+<meta name="theme-color" content="#170d28" />
 <meta name="description" content="Ильсур Зомби — закрытая аркада о самом необычном апокалипсисе." />
 <title>Ильсур Зомби</title>
 <link rel="stylesheet" href="/src/style.css" />
@@ -11,20 +11,20 @@
 <body>
 <div id="app">
   <main class="game-shell">
-    <div class="scene" aria-hidden="true"><div class="moon"></div><div class="skyline"></div><div class="mist"></div><div class="ground"></div><div class="road"></div><div class="grave grave-a"></div><div class="grave grave-b"></div><div class="grave grave-c"></div><div class="fence"></div></div>
+    <div class="scene" aria-hidden="true"><div class="spotlight spotlight-pink"></div><div class="spotlight spotlight-blue"></div><div class="moon"></div><div class="sparkles"></div><div class="skyline"></div><div class="mist"></div><div class="ground"></div><div class="road"></div><div class="grave grave-a"></div><div class="grave grave-b"></div><div class="grave grave-c"></div><div class="fence"></div></div>
     <section id="menu" class="screen menu" aria-labelledby="game-title">
-      <header class="brand"><span class="brand-icon" aria-hidden="true">ИЗ</span><span>КОНЕЦ СВЕТА. НАЧАЛО ВЕСЕЛЬЯ.</span><span class="build">ПРОТОТИП / 01</span></header>
-      <div class="menu-content"><p class="eyebrow"><span></span> ГОРОД УСНУЛ. ИЛЬСУРЫ ПРОСНУЛИСЬ.</p><h1 id="game-title">ИЛЬСУР<br><span>ЗОМБИ</span><b aria-hidden="true">✳</b></h1><p class="intro">Один город. Слишком много Ильсуров.<br>И ты по эту сторону баррикады.</p><button id="play" class="primary">НА АРЕНУ <span aria-hidden="true">↗</span></button><p class="menu-note">Тестовая арена · без боя</p></div>
-      <div class="location"><span class="location-dot"></span> СЕКТОР 01 <strong>ПОСЛЕ ПОЛУНОЧИ</strong></div><footer class="menu-footer"><span>ДОБРО ПОЖАЛОВАТЬ В АПОКАЛИПСИС</span><span>ВЫЖИВЕМ. НАВЕРНОЕ.</span></footer>
+      <header class="brand"><span class="brand-icon" aria-hidden="true">ИЗ</span><span>КОНЕЦ СВЕТА. НАЧАЛО ШОУ.</span><span class="build">ПРОТОТИП / 01</span></header>
+      <div class="menu-content"><p class="eyebrow"><span></span> МЁРТВЫЕ ПРОСНУЛИСЬ. ДИВЫ СОБРАЛИСЬ.</p><h1 id="game-title">ИЛЬСУР<br><span>ЗОМБИ</span><b aria-hidden="true">✳</b></h1><p class="intro">Один город. Слишком много Ильсуров.<br>Они восстали. И оделись на выход.</p><button id="play" class="primary">НАЧАТЬ ШОУ <span aria-hidden="true">↗</span></button><p class="menu-note">Тестовая арена · без боя</p></div>
+      <div class="location"><span class="location-dot"></span> ГЛАВА 01 <strong>РАДУЖНЫЙ ПЕРЕПОЛОХ</strong></div><footer class="menu-footer"><span>АПОКАЛИПСИС С ДРЕСС-КОДОМ</span><span>БЛЁСТКИ ПЕРЕЖИВУТ ВСЕХ.</span></footer>
     </section>
     <section id="arena" class="screen arena" aria-label="Тестовая арена" hidden>
-      <header class="hud"><div class="health"><span>ЗДОРОВЬЕ</span><strong>100 <small>/ 100</small></strong><div class="health-bar"></div></div><div class="sector"><span>СЕКТОР 01</span><strong>ТИШИНА ПЕРЕД БУРЕЙ</strong></div><button id="pause" class="icon-button" aria-label="Пауза">Ⅱ</button></header>
-      <div class="arena-notice"><span class="eyebrow">ПЕРИМЕТР ГОТОВ</span><h2>Пока подозрительно тихо.</h2><p>Ильсуры и стрельба появятся на следующем этапе.</p></div>
+      <header class="hud"><div class="health"><span>ЗДОРОВЬЕ</span><strong>100 <small>/ 100</small></strong><div class="health-bar"></div></div><div class="sector"><span>ГЛАВА 01</span><strong>РАДУЖНЫЙ ПЕРЕПОЛОХ</strong></div><button id="pause" class="icon-button" aria-label="Пауза">Ⅱ</button></header>
+      <div class="arena-notice"><span class="eyebrow">СЦЕНА ГОТОВА</span><h2>Шоу вот-вот начнётся.</h2><p>Ильсуры и стрельба появятся на следующем этапе.</p></div>
       <div class="crosshair" aria-hidden="true"></div><div class="barricade" aria-hidden="true"></div>
-      <footer class="arena-footer"><span>ТЕСТОВАЯ АРЕНА</span><button id="fullscreen" class="secondary">НА ВЕСЬ ЭКРАН ↗</button><span>ОЖИДАЕМ ПЕРВУЮ ВОЛНУ</span></footer>
+      <footer class="arena-footer"><span>ТЕСТОВАЯ АРЕНА</span><button id="fullscreen" class="secondary">НА ВЕСЬ ЭКРАН ↗</button><span>ЖДЁМ ВЫХОДА ИЛЬСУРОВ</span></footer>
     </section>
-    <section id="pause-screen" class="overlay" aria-labelledby="pause-title" hidden><div class="panel"><p class="eyebrow">ПЕРЕДЫШКА</p><h2 id="pause-title">Ильсуры подождут.</h2><button id="resume" class="primary">ПРОДОЛЖИТЬ →</button><button id="back" class="secondary">В ГЛАВНОЕ МЕНЮ</button></div></section>
-    <section id="rotate" class="rotate overlay" aria-labelledby="rotate-title"><div class="panel"><div class="phone" aria-hidden="true">↻</div><p class="eyebrow">НУЖНО ЧУТЬ БОЛЬШЕ МЕСТА</p><h2 id="rotate-title">Поверни телефон</h2><p>Ильсуры наступают широким фронтом.<br>Играй в горизонтальном положении.</p></div></section>
+    <section id="pause-screen" class="overlay" aria-labelledby="pause-title" hidden><div class="panel"><p class="eyebrow">АНТРАКТ</p><h2 id="pause-title">Припудрить носик</h2><button id="resume" class="primary">ВЕРНУТЬСЯ В ШОУ →</button><button id="back" class="secondary">В ГЛАВНОЕ МЕНЮ</button></div></section>
+    <section id="rotate" class="rotate overlay" aria-labelledby="rotate-title"><div class="panel"><div class="phone" aria-hidden="true">↻</div><p class="eyebrow">НУЖНО ЧУТЬ БОЛЬШЕ МЕСТА</p><h2 id="rotate-title">Поверни телефон</h2><p>Для эффектного выхода нужна широкая сцена.<br>Играй в горизонтальном положении.</p></div></section>
     <p id="status" class="sr-only" role="status" aria-live="polite"></p>
   </main>
 </div>
